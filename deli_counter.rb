@@ -23,7 +23,8 @@ def now_serving(katz_deli)
   if katz_deli.empty?
     puts "There are no people in the line."
   else
-    
+    puts "Now serving #{katz_deli.first}."
+    katz_deli.shift
   end
 
 end
