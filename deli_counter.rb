@@ -4,8 +4,8 @@ katz_deli = []
 def line(katz_deli)
   if katz_deli.length > 0
     current_line = "The line is currently: "
-    katz_deli.each_with_index.map do |name, index|
-      "#{index+1}: #{name}"
+    katz_deli.each_with_index do |name, index|
+      current_line.push("#{index+1}: #{name}" )
     end
   else
  puts "The line is currently empty."
